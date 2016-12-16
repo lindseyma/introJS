@@ -1,4 +1,5 @@
 var b = document.getElementById("b");
+var l = document.getElementsByTagName("li");
 
 var f = function(){
 	var ol = document.getElementById("thelist");
@@ -8,3 +9,10 @@ var f = function(){
 }
 
 b.addEventListener("click", f);
+
+var rm = function(n){
+	var li = document.getElementsByTagName("li");
+	li[n].remove();
+}
+
+l[0].addEventListener("click", rm);
