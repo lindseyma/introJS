@@ -6,13 +6,14 @@ var f = function(){
 	var li = document.createElement("li");
 	li.appendChild(document.createTextNode("New Thing!"));
 	ol.appendChild(li);
+	for(var i=0; i<l.length; i++){
+	    l[i].addEventListener("click", rm);
+	}
 }
 
 b.addEventListener("click", f);
 
 var rm = function(){
-	var li = document.getElementsByTagName("li");
-	li[0].remove();
+    this.remove()
 }
 
-l[0].addEventListener("click", rm);

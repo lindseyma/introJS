@@ -10,9 +10,9 @@ var f = function(){
 
 b.addEventListener("click", f);
 
-var rm = function(n){
+var rm = function(){
 	var li = document.getElementsByTagName("li");
-	li[n].remove();
+	li[0].remove();
 }
 
 l[0].addEventListener("click", rm);
